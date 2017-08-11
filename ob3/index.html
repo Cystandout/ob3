@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>首页</title>
+<link id="css" href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/button.css" rel="stylesheet" type="text/css" />
+<script src="jquery.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="admin.html">Brand</a>				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">首页</a></li>
+						<li><a href="present.html">发布</a></li>
+                        <li><a href="shop.html">二手商店</a></li>
+							 <li><a href="mine.php">我的闲置</a></li>
+						<li class="dropdown">
+							 <a href="" class="dropdown-toggle" data-toggle="dropdown">换肤<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+                            <li><a href="#" onclick="White()"/>Bootstrap白</a></li>
+                            <li><a href="#" onclick="Yellow()"/>柠檬黄</a></li>
+                            <li><a href="#" onclick="Blue()"/>冰川蓝</a></li>
+                            
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search" action="search.php" method="get">
+						<div class="form-group">
+							<input type="text" name="keyword" class="form-control" />
+						</div> <button type="submit" class="button button-rounded button-caution button-small button-longshadow-right">GO</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li >
+							 <a href="reg.html">注册</a></li>
+							 <li>
+							 <a href="login.html">登录</a></li>
+					</ul>
+                   </div>
+			</nav>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="jumbotron">
+				<h1>我们没有办法</h1>
+				<p>	浙江温州最大皮革厂江南皮革厂倒闭了！王八蛋老板黄鹤欠下了3.5个亿，带着他的小姨子跑了。我们没有办法，只能拿着钱包抵工资，原价￥100多，￥200多，￥300多的钱包，现在通通只要￥20块。<img src="image/pi.jpg" width="1000">		</p>
+				<p>
+					 <a class="btn btn-primary btn-large" href="shop.html">发现更多</a>				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>
+function Blue(){
+	document.getElementById("css").href="css/bootstrap.min.css";
+}
+</script>
+<script>
+function White(){
+	document.getElementById("css").href="css/bootstrap.min2.css";
+}
+</script>
+<script>
+function Yellow(){
+	document.getElementById("css").href="css/bootstrap.minY.css";
+}
+</script>
+</html>

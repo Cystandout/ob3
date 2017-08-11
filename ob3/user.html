@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>发布</title>
+<link id="css" href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/button.css" rel="stylesheet" type="text/css" />
+<script>
+function Blue(){
+	document.getElementById("css").href="css/bootstrap.min.css";
+}
+</script>
+<script>
+function White(){
+	document.getElementById("css").href="css/bootstrap.min2.css";
+}
+</script>
+<script>
+function Yellow(){
+	document.getElementById("css").href="css/bootstrap.minY.css";
+}
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Brand</a>				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							 <a href="index.html">首页</a>						</li>
+						<li class="active">
+							 <a href="present.html">发布</a>	
+							 <li>
+							 <a href="shop.html">二手商店</a>	
+							 <li>
+							 <a href="mine.php">我的闲置</a>					</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">换肤<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li><a href="#" onclick="White()"/>Bootstrap白</a></li>
+                            <li><a href="#" onclick="Yellow()"/>柠檬黄</a></li>
+                            <li><a href="#" onclick="Blue()"/>冰川蓝</a></li>					
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" />
+						</div> <button type="submit" class="button button-rounded button-caution button-small button-longshadow-right">GO</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+							 <li>
+							 <a href="present.html">退出登录</a>						</li>
+					</ul>
+					<p>
+					
+					
+					
+					
+				</div>
+			</nav>
+            <div class="table-responsive">
+  <table class="table table-striped" border="0" width="100%"><tbody id="disp">
+<th class="info">姓名</th> <th class="info">昵称</th> 
+<th class="info">年龄</th> <th class="info">性别</th>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script>//换肤
+function Blue(){
+	document.getElementById("css").href="css/bootstrap.min.css";
+}
+</script>
+<script>
+function White(){
+	document.getElementById("css").href="css/bootstrap.min2.css";
+}
+</script>
+<script>
+function Yellow(){
+	document.getElementById("css").href="css/bootstrap.minY.css";
+}
+</script>
+<script>//ajax方式连接数据库
+$(function(){
+	$.get("user.php",function(data){
+		$("#disp").append(data);
+	});  })
+</script>
+</html>
+
